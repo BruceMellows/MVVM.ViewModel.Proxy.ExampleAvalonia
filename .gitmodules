@@ -1,0 +1,9 @@
+[submodule "MVVM.ViewModel.Proxy.ExampleAvalonia/MVVM.ViewModel.Proxy"]
+	path = MVVM.ViewModel.Proxy.ExampleAvalonia/MVVM.ViewModel.Proxy
+	url = https://github.com/BruceMellows/MVVM.ViewModel.Proxy.git
+[submodule "MVVM.ViewModel.Proxy.ExampleAvalonia/EventuallyCorrect"]
+	path = MVVM.ViewModel.Proxy.ExampleAvalonia/EventuallyCorrect
+	url = https://github.com/BruceMellows/EventuallyCorrect.git
+[submodule "MVVM.ViewModel.Proxy.ExampleAvalonia/MVVM.ViewModel.Proxy.ServiceCollectionExtensions"]
+	path = MVVM.ViewModel.Proxy.ExampleAvalonia/MVVM.ViewModel.Proxy.ServiceCollectionExtensions
+	url = https://github.com/BruceMellows/MVVM.ViewModel.Proxy.ServiceCollectionExtensions.git
