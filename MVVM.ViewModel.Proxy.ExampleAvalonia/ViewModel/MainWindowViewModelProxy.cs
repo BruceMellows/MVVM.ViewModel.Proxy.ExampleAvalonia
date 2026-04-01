@@ -30,7 +30,7 @@ public class MainWindowViewModelProxy : ViewModelProxy<IMainWindowViewModel>, IN
 {
 	public MainWindowViewModelProxy(IServiceProvider serviceProvider)
 	{
-		SetTitle(ViewModel);
+		SetTitle(Proxied);
 		OnChanged(vm => vm.Width, (vm, value) => SetTitle(vm));
 		OnChanged(vm => vm.Height, (vm, value) => SetTitle(vm));
 	}
