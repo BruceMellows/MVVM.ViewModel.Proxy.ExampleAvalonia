@@ -22,10 +22,11 @@
 
 using BruceMellows.MVVM.ViewModel.Proxy;
 using System;
+using System.ComponentModel;
 
 namespace MVVM.ViewModel.Proxy.ExampleAvalonia.ViewModel;
 
-public class MainWindowViewModelProxy : ViewModelProxy<IMainWindowViewModel>
+public class MainWindowViewModelProxy : ViewModelProxy<IMainWindowViewModel>, INotifyPropertyChanged
 {
 	public MainWindowViewModelProxy(IServiceProvider serviceProvider)
 	{
@@ -33,6 +34,8 @@ public class MainWindowViewModelProxy : ViewModelProxy<IMainWindowViewModel>
 		OnChanged(vm => vm.Width, (vm, value) => SetTitle(vm));
 		OnChanged(vm => vm.Height, (vm, value) => SetTitle(vm));
 	}
+
+	public event PropertyChangedEventHandler? PropertyChanged;
 
 	private static void SetTitle(IMainWindowViewModel vm) => vm.Title = $"Hello, World! {vm.Width}, {vm.Height}";
 }
